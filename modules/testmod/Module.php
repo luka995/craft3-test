@@ -15,7 +15,7 @@ use yii\base\Event;
 class Module extends \yii\base\Module
 {
     
-    public function init() 
+    public function init() : void
     {
         parent::init();
         

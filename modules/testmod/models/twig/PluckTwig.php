@@ -12,11 +12,15 @@ class PluckTwig extends \Twig\Extension\AbstractExtension
             new TwigFunction('pluck', [$this, 'pluck']),
         ];
     }
-    
+        
+    /**
+        * @param array<mixed, object> $arr
+        * @return array<mixed, object>
+    */
     public function pluck(array $arr, string $key) : array
     {
         return array_map(function($val) use ($key) {
-            return is_object($val) ? $val->$key : $val[$key];
+            return $val->$key;
         }, $arr);
     }
 }

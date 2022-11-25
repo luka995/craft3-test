@@ -16,7 +16,10 @@ class DataReader
         return new Client($opts);                    
     }
     
-    public static function readData(string $baseUri, string $url): array
+    /**        
+        * @return array<mixed, object>
+    */
+    public static function readData(string $baseUri, string $url) : array
     {
         $client = self::createClient($baseUri);
         $response = $client->get($url);
