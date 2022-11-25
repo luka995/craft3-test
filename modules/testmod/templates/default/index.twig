@@ -1,0 +1,23 @@
+{% extends "testmod\\default\\_layout.twig" %}
+
+{% set pluckArray = pluck(data, 'founder') %}
+
+
+{% block content %}
+    <h1>Zdravo svete</h1>
+    
+    {{ dump(pluckArray) }}
+    
+    <h3> Or "foreach" example:</h3>
+    
+    {% if pluckArray %}
+    
+    <ul>
+        {% for item in pluckArray %}
+            <li>{{ item }}</li>       
+        {% endfor %}
+    </ul>
+    
+    {% endif %}
+    
+{% endblock %}

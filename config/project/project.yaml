@@ -1,0 +1,22 @@
+dateModified: 1669233898
+email:
+  fromEmail: lukastosic@yandex.com
+  fromName: craft3.test
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0e4e3a1c-45dc-4ddc-b006-75f85d039622: craft3.test # craft3.test
+    1a0d1f50-9034-481c-8111-0edc88f25fe9: craft3.test # craft3.test
+    66a1ec60-200f-422e-bbcf-fa13cf78178f: Common # Common
+system:
+  edition: solo
+  live: true
+  name: craft3.test
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
