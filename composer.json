@@ -1,17 +1,17 @@
 {
-  "require": {
-    "craftcms/cms": "^4.2.7",
+  "require": {    
     "vlucas/phpdotenv": "^5.4.0",
     "guzzlehttp/guzzle": ">=6.0"
   },
   "require-dev": {
+    "phpstan/phpstan": "^1.9",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
     "psr-4": {
       "modules\\testmod\\": "modules/testmod/"
     }
-  },
+  },  
   "config": {
     "allow-plugins": {
       "craftcms/plugin-installer": true,
@@ -21,7 +21,7 @@
     "optimize-autoloader": true,
     "platform": {
       "php": "8.0.2"
-    }
+    }    
   },
   "scripts": {
     "post-root-package-install": [
